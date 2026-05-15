@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="JacuzzisConford">
+  <defs>
+    <linearGradient id="drop" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#19B5FE" stop-opacity="1"/>
+      <stop offset="55%" stop-color="#007BFF" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#001B5B" stop-opacity="1"/>
+    </linearGradient>
+    <radialGradient id="shine" cx="35%" cy="28%" r="70%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.75"/>
+      <stop offset="55%" stop-color="#ffffff" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softShadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#007BFF" flood-opacity="0.22"/>
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#001B5B" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <path
+    d="M128 36
+       C128 36, 72 104, 72 152
+       C72 190, 97 218, 128 218
+       C159 218, 184 190, 184 152
+       C184 104, 128 36, 128 36 Z"
+    fill="url(#drop)"
+    filter="url(#softShadow)"
+  />
+  <path
+    d="M108 92
+       C95 112, 90 128, 90 146
+       C90 156, 94 165, 101 172"
+    fill="none"
+    stroke="url(#shine)"
+    stroke-width="14"
+    stroke-linecap="round"
+    opacity="0.9"
+  />
+  <circle cx="152" cy="172" r="20" fill="url(#shine)" opacity="0.22"/>
+</svg>
